@@ -1,0 +1,105 @@
+.logoipsum {
+    background-color: $primary_color;
+    padding-top: 50px;
+
+  
+    &__list {
+      display: flex;
+      gap: 40px;
+     
+      
+   
+    }
+  
+    &__line-down {
+      margin: 0;
+      border: none;
+      border-bottom: 1px solid;
+      width: 100%;
+      display: block;
+      margin-top: 40px;
+
+    }
+    
+
+
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    .logoipsum {
+  
+      &__list {
+        display: flex;
+        flex-wrap: wrap;               
+        justify-content: space-between;
+        gap: 20px;  
+        
+      
+      }
+  
+
+      &__list > svg:nth-child(-n+3) {
+        flex: 0 0 calc((100% - 2 * 20px) / 3);
+      }
+  
+
+      &__list > svg:nth-child(n+4) {
+        flex: 0 0 calc((100% - 3 * 20px) / 4);
+      }
+    
+    }
+
+
+
+
+
+  }
+
+
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    
+    .logoipsum {
+     
+      &__list {
+        max-width: 438px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+
+       
+
+        &-konor {
+          width: 160px;
+        }
+        &-has {
+          width: 180px;
+        }
+        &-leya {
+          width: 103px;
+        }
+        &-jack {
+          width: 130px;
+        }
+        &-stef {
+          width: 134px;
+        }
+        &-moon {
+          width: 100px;
+        }
+        &-mac {
+          width: 144px;
+        }
+
+      }
+
+
+    
+
+   
+
+
+    }
+  }

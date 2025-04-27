@@ -1,0 +1,27 @@
+.hero-image {
+  &__wrapper {
+    width: 100%;
+    overflow: hidden;        
+    aspect-ratio: 1920 / 956;
+    
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1200px) {
+    &__wrapper {
+      aspect-ratio: 768 / 382;
+    }
+  }
+
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &__wrapper {
+      aspect-ratio: 478 / 632;
+  
+    }
+  }
+}
