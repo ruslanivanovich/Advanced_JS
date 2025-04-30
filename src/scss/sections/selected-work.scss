@@ -27,6 +27,13 @@
         padding-top: 50px;
     }
 
+        &__card img,
+        &__media img {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+
     &__trinity {
         font-family: 'Gilroy-Bold', sans-serif;
         font-weight: 400;
